@@ -2,6 +2,8 @@
 #include <cstdlib>
 #include <ctime>
 
+#define NUM_CHARS_TO_SKIP 1000
+
 using std::cin;
 using std::cout;
 using std::endl;
@@ -131,7 +133,7 @@ option get_chosen_option(){
 		}
 		
 		cin.clear();
-		cin.ignore(1000, '\n');
+		cin.ignore(NUM_CHARS_TO_SKIP, '\n');
 
 		cout << "Incorrect option." << endl;
 	}
